@@ -10,7 +10,7 @@ If they are, it will print out good job, if not, it'll tell them to put it on.
 2. Either use the test file or download your own image of someone wearing or not wearing a mask into the test folder, which is in data/mask/test/. 
 There will be two folders, WithMask and WithoutMask. Upload the image accordingly.
 3. In the mask_detection_project directory, paste these two commands:
- NET=models/mask 
+ NET=models/mask and
  DATASET=data/mask 
 This will set the values to these directories and will allow the final command to work.
 4. Once that's done, to run the program, paste this:
