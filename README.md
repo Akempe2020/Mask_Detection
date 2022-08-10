@@ -12,10 +12,12 @@ There will be two folders, WithMask and WithoutMask. Upload the image accordingl
 3. In the mask_detection_project directory, paste these two commands:
 NET=models/mask
 DATASET=data/mask
+
 This will set the values to these directories and will allow the final command to work.
 4. Once that's done, to run the program, paste this:
 python3 mask_detection.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/WithMask/<blank>.png output.png
-Some changes may need to be made to classify difference images. If your image is in the WithoutMask folder, change the value WithMask to WithoutMask.
+
+  Some changes may need to be made to classify difference images. If your image is in the WithoutMask folder, change the value WithMask to WithoutMask.
 Change the <blank>.png to any png in the test folders. And if you classify multiple images, you need to change output to a different number, like output_1.png.
 If you download your own image, it may be a different kind, like a jpg. If this is the case, you would need to change <blank>.png to whatever the filename is.
 It would be <blank>.jpg. You would also need to change output.png to output.jpg.
